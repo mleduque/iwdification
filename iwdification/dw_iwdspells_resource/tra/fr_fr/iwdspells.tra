@@ -1198,7 +1198,7 @@ Temps d'incantation : 2
 Zone d'effet : 4,50 mètres de rayon
 Jet de sauvegarde : demi-dégâts
 Ce sort fait apparaître un déluge de boules de neige à partir du point choisi par le magicien. Ces projectiles touchent toutes les créatures prises dans la zone d'effet et leur infligent 1d3 points de dégâts de froid par niveau du personnage, jusqu'à un maximum de 8d3 au niveau 8. Contre les créatures à base de feu (ou qui l'utilisent), le sort cause 1d6 points de dégâts de froid par niveau, jusqu'à un maximum de 8d6 au niveau 8.~
-@10=~<Invalid Strref 9999999>~
+@10=~Épée de force de Mardenkainen~
 @9=~Nuée de boules de neige de Snilloc~
 @8=~L'Œil de l'esprit bloque un effet magique et se dissipe.~
 @7=~L'Œil de l'épée bloque un effet magique et se dissipe.~
