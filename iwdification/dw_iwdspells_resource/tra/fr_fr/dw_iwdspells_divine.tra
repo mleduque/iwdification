@@ -1,26 +1,26 @@
 // this is a copy of the tra file from Sword Coast Stratagems
 
 
-@1="Chant
-(Conjuration/Summoning)
+@1 = ~Cantique
+(Conjuration/Convocation)
 
-Level: 2
-Sphere: Combat
-Range: Visual range of the caster
-Duration: 1 turn
-Casting Time: 9
-Area of Effect: 60-ft. radius
-Saving Throw: None
+Niveau : 2
+Sphère : combat
+Portée : champ visuel du lanceur
+Durée : 1 tour
+Temps d'incantation : 9
+Zone d'effet : rayon de 18 mètres
+Jet de sauvegarde : aucun
 
-By means of the Chant spell, the priest brings special favor upon <PRO_HIMHER>self and <PRO_HISHER> party and causes harm to <PRO_HISHER> enemies. When the Chant spell is completed, all the priest's allies within the area of effect gain a +1 bonus to attack rolls, minimum damage rolls, and Saving Throws. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1. For example, a 6d6 fireball will do 6d5 damage, and a flaming long sword that deals 1d8+2 slashing plus 1d3 fire damage will deal 1d8+2 slashing plus 1d2 fire damage instead. The priest's enemies suffer from the opposite effects.
+Avec le sort de cantique, le prêtre attire une faveur spéciale sur lui-même et sur son groupe, et cause du tort à ses ennemis. Lorsque l'incantation se termine, tous les jets d'attaque et de dégâts, ainsi que les jets de sauvegarde effectués par les amis du prêtre situés dans la zone d'effet, reçoivent un bonus de 1, alors que les ennemis du prêtre écopent d'un malus de 1. 
+Les cantiques multiples ne sont pas cumulatifs. Ce sort requiert une certaine concentration de la part du lanceur, de fait, sa vitesse est réduite de moitié.~
 
-Multiple chants are not cumulative. This spell requires a moderate amount of concentration by the caster, so <PRO_HISHER> movement is slowed by half."
-@2="It cannot be cast by good-aligned characters." // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Light Wounds in your language with this English translation.
-@3="It cannot be cast by good-aligned characters." // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Moderate Wounds in your language with this English translation.
-@4="Cause Medium Wounds cannot be cast by good-aligned characters." // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Medium Wounds in your language with this English translation.
-@5="It cannot be cast by good-aligned characters." // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Serious Wounds in your language with this English translation.
-@6="It can be cast only by evil-aligned characters." // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Critical Wounds in your language with this English translation.
-@7="It can only be cast by evil-aligned characters." // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Serious Wounds in your language with this English translation.
+@2 = ~Il ne peut être lancé par un personnage d'alignement bon.~ // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Light Wounds in your language with this English translation.
+@3 = ~Il ne peut être lancé par des personnages d'alignement bon.~ // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Moderate Wounds in your language with this English translation.
+@4 = ~Il ne peut être lancé par des personnages d'alignement bon.~ // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Medium Wounds in your language with this English translation.
+@5 = ~Il ne peut être lancé par des personnages d'alignement bon.~ // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Serious Wounds in your language with this English translation.
+@6 = ~Il ne peut être lancé que par des personnages d'alignement mauvais.~ // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Critical Wounds in your language with this English translation.
+@7 = ~Il ne peut être lancé que par des personnages d'alignement mauvais.~ // NOTE TO TRANSLATORS: this must *exactly* match the sentence in the description of Cause Serious Wounds in your language with this English translation.
 @8 = ~Symbol, Pain
 (Conjuration/Summoning)
 Level: 7
@@ -36,22 +36,22 @@ Symbol, Pain is a powerful enchantment that allows the priest to inscribe a symb
 
 // note to translators: any sentence containing any of strings 10001-10020 is deleted from the spell description. Use these to remove good/evil alignment restrictions from the spell descriptions. (Use 10007 and later if you need more than 6 strings to do this in your language)
 
-@10001="can only be cast by good-aligned characters"
-@10002="can only be cast by evil-aligned characters"
-@10003="can be cast only by good-aligned characters"
-@10004="can be cast only by evil-aligned characters"
-@10005="cannot be cast by good-aligned characters"
-@10006="cannot be cast by evil-aligned characters"
-@10007="NULL_NOT_IN_USE_WURBLE"
-@10008="NULL_NOT_IN_USE_WURBLE"
-@10009="NULL_NOT_IN_USE_WURBLE"
-@10010="NULL_NOT_IN_USE_WURBLE"
-@10011="NULL_NOT_IN_USE_WURBLE"
-@10012="NULL_NOT_IN_USE_WURBLE"
-@10013="NULL_NOT_IN_USE_WURBLE"
-@10014="NULL_NOT_IN_USE_WURBLE"
-@10015="NULL_NOT_IN_USE_WURBLE"
-@10016="NULL_NOT_IN_USE_WURBLE"
+@10001="Il ne peut être lancé par un personnage d'alignement bon"
+@10002="Il ne peut être lancé que par des personnages d'alignement mauvais"
+@10003="Il ne peut être lancé par un personnage d'alignement mauvais"
+@10004="Ce sort ne peut être lancé que par des personnages d'alignement mauvais"
+@10005="Il ne peut être lancé par des personnages d'alignement bons"
+@10006="Ce sort ne peut être lancé par des personnages d'alignement mauvais"
+@10007="Il ne peut être lancé par des créatures d'alignement mauvais"
+@10008="Il ne peut être lancé par un personnage maléfique"
+@10009="Cercle d'ossements ne peut être lancé par les personnages d'alignement bon"
+@10010="Nuage de pestilence ne peut être lancé que par les personnages mauvais"
+@10011="Parole infernale ne peut être lancé que par les personnages mauvais"
+@10012="Parole divine ne peut être lancé que par les personnages bons"
+@10013="Résurrection ne peut être lancé que par un personnage d'alignement bon"
+@10014="Ce sort ne peut être lancé que par un personnage d'alignement mauvais"
+@10015="Ce sort ne peut être lancé par des prêtres d'alignement mauvais"
+@10016="Ce sort ne peut être lancé par un personnage d'alignement mauvais"
 @10017="NULL_NOT_IN_USE_WURBLE"
 @10018="NULL_NOT_IN_USE_WURBLE"
 @10019="NULL_NOT_IN_USE_WURBLE"
