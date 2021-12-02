@@ -112,15 +112,6 @@ Les cantiques multiples ne sont pas cumulatifs. Ce sort requiert une certaine co
 @215 = ~Peut interpréter le Chant des sirènes à partir du niveau 9.~
 @216 = ~Peut interpréter le Chant de guerre de Sith à partir du niveau 11.~
 
-
-@210 = ~Peut utiliser la capacité Chant de barde pour jouer n'importe quelle chanson de son répertoire.~
-@211 = ~Peut interpréter la Ballade des trois héros à partir du niveau 1.~
-@212 = ~Peut interpréter la Ballade de Curran Cœurvaillant à partir du niveau 3.~
-@213 = ~Peut interpréter la Mélodie de Tymora à partir du niveau 5.~
-@214 = ~Peut interpréter le Chant de Kaudiès à partir du niveau 7.~
-@215 = ~Peut interpréter le Chant des sirènes à partir du niveau 9.~
-@216 = ~Peut interpréter le Chant de guerre de Sith à partir du niveau 11.~
-
 @220 = ~- Ne connaît pas les chants disponibles pour les bardes classiques.~
 @221 = ~- Aucun.~ // must match the string used in kit descriptions to indicate that there are no disadvantages; see, e.g., Jester
 @222 = ~Désavantages :~ // must match appropriate string from kit descriptions
