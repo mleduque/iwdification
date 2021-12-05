@@ -206,10 +206,10 @@ Dégâts : 1d6 (tranchant)
 
 Capacités spéciales :
 - résistance au froid : 75%
-- résistance au feu : -25%~  
-@10003 = ~- Peut lancer « Détection du mal » une fois par jour par niveau (trois utilisations au niveau 1).~ // match exact from bg2ee strref 9558
-@10004 = ~- Peut lancer « Protection contre le mal » une fois par jour par niveau.~ // match exact from bg2ee strref 9558
-@10005 = ~- Peut lancer quelques sorts divins à partir du niveau 9.~ // match exact from bg2ee strref 9558
+- résistance au feu : -25%~
+@10003 = ~- Peut lancer ['«][  ]?Détection du mal[  ]?['»] une fois par jour par niveau ([^  ]+[  ]utilisations au niveau[  ]1)\.~ // match exact from bg2ee strref 9558
+@10004 = ~- Peut lancer ['«][  ]?Protection contre le mal[  ]?['»] une fois par jour par niveau\.~ // match exact from bg2ee strref 9558
+@10005 = ~- Peut lancer quelques sorts divins à partir du niveau[  ]9\.~ // match exact from bg2ee strref 9558
 @10006 = ~- Peut lancer 'Guérison des maladies' une fois par jour.
 - Peut lancer 'Détection du mal' une fois par round.~ // grab text from iwdee 9558
 @10007 = ~- Peut lancer une version spéciale de 'Protection contre le mal' une fois par jour. Cette capacité n'affecte que le paladin et dure 24 tours.
@@ -226,4 +226,4 @@ Capacités spéciales :
 ESQUIVE TOTALE : Chaque fois que le personnage est affecté par un sort auquel il est possible d'échapper partiellement (Boule de feu, Éclair, etc.), il esquive la totalité des dégâts s'il réussit un jet de sauvegarde contre les souffles. Si le jet de sauvegarde est raté, le sort fonctionne normalement (et le personnage a droit à un second jet de sauvegarde pour ne subir que des dégâts réduits de moitié, le cas échéant). Notez qu'un personnage sans défense (immobilisé, étourdi, etc.) ne peut avoir recours à cette capacité.
 
 ~ // keep these extra linebreaks
-@12004 = ~- Ne peut pas être d'alignement loyal-bon.~ // match this exactly to main thief description (strref 9561), as this is used as a text-match
+@12004 = ~- Ne peut pas être d'alignement loyal[ -]bon\.~ // match this exactly to main thief description (strref 9561), as this is used as a text-match

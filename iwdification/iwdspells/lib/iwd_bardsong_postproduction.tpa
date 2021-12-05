@@ -71,23 +71,34 @@ DEFINE_ACTION_FUNCTION iwd_bardsong_postproduction BEGIN
 END
 
 DEFINE_PATCH_FUNCTION bard_desc_helper BEGIN
+	PATCH_LOG bard_desc_helper
 	SPRINT old @201
+	PATCH_LOG "201 ready"
 	REPLACE_TEXTUALLY "\(.*\)%old%.*" "\1DW_PLACEHOLDER"
+	PATCH_LOG "201 done ->%old%"
+	PATCH_LOG "now start cleanup"
 	PATCH_FOR_EACH tra_ref IN 202 203 204 BEGIN
+		PATCH_LOG "start %tra_ref%"
 		SPRINT old (AT tra_ref)
 		REPLACE_TEXTUALLY "[%WNL%%LNL%%MNL%].*%old%" ""
+		PATCH_LOG "done %tra_ref% ->%old%"
 	END
+	PATCH_LOG "cleanup done, now reinsert"
 	PATCH_FOR_EACH tra_ref IN 216 215 214 213 212 211 210 BEGIN
+		PATCH_LOG "start %tra_ref%"
 		SPRINT new (AT tra_ref)
 		REPLACE_TEXTUALLY "\(.*\)DW_PLACEHOLDER.*\([%WNL%%LNL%%MNL%]\)" "\1DW_PLACEHOLDER\2\1%new%\2"		
+		PATCH_LOG "done %tra_ref% ->%new%"
 	END
 	REPLACE_TEXTUALLY "\(.*\)DW_PLACEHOLDER.*\([%WNL%%LNL%%MNL%]\)" ""	
 END
 
 DEFINE_PATCH_FUNCTION bard_kit_desc_helper BEGIN
-	SPRINT discard @221
-	SPRINT disadvantages @222
-	SPRINT newline @220
+	PATCH_LOG bard_kit_desc_helper
+	SPRINT discard @221 // None.
+	SPRINT disadvantages @222 // Disadvantages:
+	SPRINT newline @220 // Does not know the songs available to regular Bards.
 	REPLACE_TEXTUALLY "%disadvantages%\(.*[%WNL%%MNL%%LNL%][^a-zA-Z0-9]*\)\([a-zA-Z0-9].*\)" "%disadvantages%\1%newline%\1\2"
+	PATCH_LOG "patched in disavantages"
 	REPLACE_TEXTUALLY "[%WNL%%MNL%%LNL%][^a-zA-z]*%discard%.*" ""
 END
