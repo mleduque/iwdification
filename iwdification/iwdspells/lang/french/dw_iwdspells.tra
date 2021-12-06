@@ -98,7 +98,7 @@ Les cantiques multiples ne sont pas cumulatifs. Ce sort requiert une certaine co
 
 // encode in UTF-8
 
-@201 = ~Peut utiliser la capacité de ['«][  ]?Chant d[eu] barde[  ]?['»]\. Lorsqu'elle est active, cette capacité octroie aux alliés les bonus suivants[  ]:~ // 1-4 must exactly match the appropriate strings from the BG2 description of the bard song (other than replacing '.' with '\.')
+@201 = ~Peut utiliser la capacité de ['«][  ][^:]+:~ // 1-4 must exactly match the appropriate strings from the BG2 description of the bard song (other than replacing '.' with '\.')
 @202 = ~ *[Aa]ugmente \(le \)?moral à \(sa \)?valeur moyenne,?~
 @203 = ~ *[Pp]rotection contre la peur\( et\)?~
 @204 = ~ *[Aa]paisement de la peur\.?~
